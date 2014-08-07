@@ -26,6 +26,10 @@
         <%= f.file_field :picture %>
         <p class="help-block">Image for document.</p>
       </div>
+      <div class="form-group">
+        <%= f.label :transcription %><br>
+        <%= f.text_area :transcription, class: "form-control", placeholder: "Document Transcription", rows: 20 %>
+      </div>
       <div class="actions">
         <%= f.submit "Save", class: "btn btn-default" %>
       </div>
